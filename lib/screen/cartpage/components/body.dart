@@ -1,3 +1,4 @@
+import 'package:e_comercio/screen/cartpage/components/cart_card.dart';
 import 'package:e_comercio/styles/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -27,8 +28,8 @@ class Body extends StatelessWidget {
               )),
         ],
       ),
-      body: const Column(
-        children: [],
+      body: Column(
+        children: List.generate(5, (index) => CartCard()),
       ),
     );
   }
